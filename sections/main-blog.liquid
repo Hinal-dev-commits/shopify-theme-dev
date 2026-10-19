@@ -1,0 +1,12 @@
+<section class="container"><h1>{{ blog.title | escape }}</h1>{% paginate blog.articles by 9 %}{% for article in blog.articles %}<article><a href='{{ article.url }}'>{{ article.title | escape }}</a></article>{% endfor %}{{ paginate | default_pagination }}{% endpaginate %}</section>
+{% schema %}
+{
+  "name": "Blog",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Blog"
+    }
+  ]
+}
+{% endschema %}

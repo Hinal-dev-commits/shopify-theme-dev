@@ -1,0 +1,7 @@
+<section class="container"><h1>Your addresses</h1>{% for address in customer.addresses %}<address>{{ address | format_address }}</address>{% endfor %}{% form 'customer_address', customer.new_address %}<h2>Add address</h2><input name='address[first_name]' placeholder='First name'><input name='address[last_name]' placeholder='Last name'><input name='address[address1]' placeholder='Address'><input name='address[city]' placeholder='City'><input name='address[zip]' placeholder='Postal code'><button>Save address</button>{{ form.errors | default_errors }}{% endform %}</section>
+{% schema %}
+{
+  "name": "Addresses",
+  "settings": []
+}
+{% endschema %}

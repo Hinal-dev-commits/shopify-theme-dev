@@ -1,0 +1,51 @@
+<section class="featured" id="shop" aria-labelledby="featured-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" id="featured-title">Shop Best Coffee</h2>
+          <div class="section-head__tools">
+            <a href="#" class="link-small">View all</a>
+            <button type="button" class="arrow-btn" aria-label="Previous">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button type="button" class="arrow-btn arrow-btn--dark" aria-label="Next">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <ul class="featured__track">
+          <li class="product-card">
+            <a href="#" class="product-card__link">
+              <div class="product-card__media"><img src="{{ 'product-1.svg' | asset_url }}" alt="Caramelicious coffee" width="600" height="667" loading="lazy"></div>
+              <h3 class="product-card__title">Caramelicious</h3>
+              <p class="product-card__price">$29.00</p>
+            </a>
+          </li>
+          <li class="product-card">
+            <a href="#" class="product-card__link">
+              <div class="product-card__media"><img src="{{ 'product-2.svg' | asset_url }}" alt="Hazelnut Heaven coffee" width="600" height="667" loading="lazy"></div>
+              <h3 class="product-card__title">Hazelnut Heaven</h3>
+              <p class="product-card__price">$29.00</p>
+            </a>
+          </li>
+          <li class="product-card">
+            <a href="#" class="product-card__link">
+              <div class="product-card__media"><img src="{{ 'product-3.svg' | asset_url }}" alt="Maple Magic coffee machine" width="600" height="667" loading="lazy"></div>
+              <h3 class="product-card__title">Maple Magic</h3>
+              <p class="product-card__price">$29.00</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+{% schema %}
+{
+  "name": "Featured Collection Slide",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Featured Collection Slide"
+    }
+  ]
+}
+{% endschema %}

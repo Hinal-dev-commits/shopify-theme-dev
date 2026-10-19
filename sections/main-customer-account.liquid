@@ -1,0 +1,7 @@
+<section class="container"><h1>{{ customer.name | escape }}</h1><p><a href='{{ routes.account_logout_url }}'>Sign out</a></p><h2>Orders</h2>{% for order in customer.orders %}<p><a href='{{ order.customer_url }}'>{{ order.name }}</a> ? {{ order.total_price | money }}</p>{% else %}<p>No orders yet.</p>{% endfor %}</section>
+{% schema %}
+{
+  "name": "Account",
+  "settings": []
+}
+{% endschema %}

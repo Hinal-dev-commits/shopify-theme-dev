@@ -1,0 +1,12 @@
+<section class="container"><h1>Search</h1><form action='{{ routes.search_url }}'><input name='q' type='search' value='{{ search.terms | escape }}'><button>Search</button></form>{% if search.performed %}{% paginate search.results by 12 %}{% for item in search.results %}<p><a href='{{ item.url }}'>{{ item.title | escape }}</a></p>{% endfor %}{{ paginate | default_pagination }}{% endpaginate %}{% endif %}</section>
+{% schema %}
+{
+  "name": "Search",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Search"
+    }
+  ]
+}
+{% endschema %}

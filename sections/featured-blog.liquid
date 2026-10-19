@@ -1,0 +1,45 @@
+<section class="blogs" id="blog" aria-labelledby="blogs-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" id="blogs-title">Read Our Blogs</h2>
+          <a href="#" class="link-small">Read blog posts</a>
+        </div>
+
+        <div class="blogs__grid">
+          <article class="article-card article-card--tall-1">
+            <a href="#" class="article-card__link">
+              <div class="article-card__media"><img src="{{ 'blog-1.svg' | asset_url }}" alt="Cup of coffee with beans" width="600" height="420" loading="lazy"></div>
+              <h3 class="article-card__title">What is the best coffee?</h3>
+              <p class="article-card__text">Ullamcorper ultricies elit viverra congue velit amet. Egestas bibendum lec orci fringilla quam netus sagittis non eu pellentesque facilisis.</p>
+            </a>
+          </article>
+
+          <article class="article-card article-card--tall-2">
+            <a href="#" class="article-card__link">
+              <div class="article-card__media"><img src="{{ 'blog-2.svg' | asset_url }}" alt="Woman drinking coffee" width="600" height="420" loading="lazy"></div>
+              <h3 class="article-card__title">How coffee works for your body</h3>
+              <p class="article-card__text">Ullamcorper ultricies elit viverra congue velit amet. Egestas bibendum, in ec odio fring la quam netus sagittis non eu pellentesque facilisis.</p>
+            </a>
+          </article>
+
+          <article class="article-card article-card--tall-3">
+            <a href="#" class="article-card__link">
+              <div class="article-card__media"><img src="{{ 'blog-3.svg' | asset_url }}" alt="Latte art" width="600" height="420" loading="lazy"></div>
+              <h3 class="article-card__title">Cup of coffee for your happiness</h3>
+              <p class="article-card__text">Ullamcorper ultricies elit viverra congue velit amet. Egestas bibendum lec orci fringilla quam netus sagittis non eu pellentesque facilisis.</p>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+{% schema %}
+{
+  "name": "Featured Blog",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Featured Blog"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,7 @@
+<section class="container"><h1>Order {{ order.name }}</h1><p>{{ order.created_at | date: '%B %d, %Y' }}</p>{% for line_item in order.line_items %}<p>{{ line_item.title | escape }} ? {{ line_item.quantity }} ? {{ line_item.final_line_price | money }}</p>{% endfor %}<p>Total: {{ order.total_price | money }}</p></section>
+{% schema %}
+{
+  "name": "Order",
+  "settings": []
+}
+{% endschema %}

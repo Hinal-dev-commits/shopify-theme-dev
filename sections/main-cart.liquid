@@ -1,0 +1,12 @@
+<section class="container"><h1>Your cart</h1>{% if cart.item_count == 0 %}<p>Your cart is empty.</p>{% else %}<form action='{{ routes.cart_url }}' method='post'>{% for item in cart.items %}<p>{{ item.product.title }} ? {{ item.quantity }} ? {{ item.final_line_price | money }}<input name='updates[]' value='{{ item.quantity }}' type='number' min='0'></p>{% endfor %}<p>{{ cart.total_price | money }}</p><button name='update'>Update cart</button><button name='checkout'>Checkout</button></form>{% endif %}</section>
+{% schema %}
+{
+  "name": "Cart",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Cart"
+    }
+  ]
+}
+{% endschema %}

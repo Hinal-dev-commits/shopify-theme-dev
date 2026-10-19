@@ -1,0 +1,12 @@
+<section class="container"><article><h1>{{ article.title | escape }}</h1>{{ article.content }}</article></section>
+{% schema %}
+{
+  "name": "Article",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Article"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,56 @@
+{
+  "sections": {
+    "hero-banner-1": {
+      "type": "hero-banner",
+      "settings": {}
+    },
+    "rich-text-quote-2": {
+      "type": "rich-text-quote",
+      "settings": {}
+    },
+    "featured-collection-slider-3": {
+      "type": "featured-collection-slider",
+      "settings": {}
+    },
+    "testimonials-4": {
+      "type": "testimonials",
+      "settings": {}
+    },
+    "collection-grid-mosaic-5": {
+      "type": "collection-grid-mosaic",
+      "settings": {}
+    },
+    "collection-list-products-6": {
+      "type": "collection-list-products",
+      "settings": {}
+    },
+    "newsletter-7": {
+      "type": "newsletter",
+      "settings": {}
+    },
+    "service-features-8": {
+      "type": "service-features",
+      "settings": {}
+    },
+    "featured-blog-9": {
+      "type": "featured-blog",
+      "settings": {}
+    },
+    "instagram-feed-10": {
+      "type": "instagram-feed",
+      "settings": {}
+    }
+  },
+  "order": [
+    "hero-banner-1",
+    "rich-text-quote-2",
+    "featured-collection-slider-3",
+    "testimonials-4",
+    "collection-grid-mosaic-5",
+    "collection-list-products-6",
+    "newsletter-7",
+    "service-features-8",
+    "featured-blog-9",
+    "instagram-feed-10"
+  ]
+}

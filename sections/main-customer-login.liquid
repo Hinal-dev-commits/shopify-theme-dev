@@ -1,0 +1,7 @@
+<section class="container"><h1>Sign in</h1>{% form 'customer_login' %}<label for='customer-email'>Email</label><input id='customer-email' name='customer[email]' type='email' autocomplete='email' required><label for='customer-password'>Password</label><input id='customer-password' name='customer[password]' type='password' autocomplete='current-password' required><button>Sign in</button>{{ form.errors | default_errors }}{% endform %}</section>
+{% schema %}
+{
+  "name": "Login",
+  "settings": []
+}
+{% endschema %}

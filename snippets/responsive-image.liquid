@@ -1,0 +1,1 @@
+{% if image %}{{ image | image_url: width: 1600 | image_tag: widths: '320, 640, 960, 1280, 1600', loading: 'lazy', alt: alt | default: image.alt }}{% endif %}

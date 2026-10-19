@@ -1,0 +1,12 @@
+<section class="container"><h1>Collections</h1><ul>{% for collection in collections %}<li><a href='{{ collection.url }}'>{{ collection.title | escape }}</a></li>{% endfor %}</ul></section>
+{% schema %}
+{
+  "name": "List collections",
+  "settings": [],
+  "presets": [
+    {
+      "name": "List collections"
+    }
+  ]
+}
+{% endschema %}
