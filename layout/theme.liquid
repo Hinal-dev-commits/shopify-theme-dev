@@ -1,1 +1,51 @@
-<!doctype html><html lang="{{ request.locale.iso_code }}"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="{{ 'favicon.svg' | asset_url }}"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{{ page_title }} ? {{ shop.name }}</title>{% if page_description %}<meta name="description" content="{{ page_description | escape }}">{% endif %}<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400;1,500&family=Jost:wght@300;400;500&family=Marcellus&display=swap" rel="stylesheet"><link rel="stylesheet" href="{{ 'base.css' | asset_url }}"><link rel="stylesheet" href="{{ 'components.css' | asset_url }}"><link rel="stylesheet" href="{{ 'section-header.css' | asset_url }}"><link rel="stylesheet" href="{{ 'section-hero.css' | asset_url }}"><link rel="stylesheet" href="{{ 'section-quote.css' | asset_url }}"><link rel="stylesheet" href="{{ 'section-featured-collection.css' | asset_url }}"><link rel="stylesheet" href="{{ 'section-testimonials.css' | asset_url }}"><link rel="stylesheet" href="{{ 'section-category-mosaic.css' | asset_url }}"><link rel="stylesheet" href="{{ 'section-product-lists.css' | asset_url }}"><link rel="stylesheet" href="{{ 'section-newsletter.css' | asset_url }}"><link rel="stylesheet" href="{{ 'section-service-features.css' | asset_url }}"><link rel="stylesheet" href="{{ 'section-featured-blog.css' | asset_url }}"><link rel="stylesheet" href="{{ 'section-instagram.css' | asset_url }}"><link rel="stylesheet" href="{{ 'section-footer.css' | asset_url }}"><link rel="stylesheet" href="{{ 'section-main-product.css' | asset_url }}"><link rel="stylesheet" href="{{ 'section-main-collection.css' | asset_url }}"><link rel="stylesheet" href="{{ 'section-main-cart.css' | asset_url }}"><link rel="stylesheet" href="{{ 'section-main-blog.css' | asset_url }}"><link rel="stylesheet" href="{{ 'section-main-article.css' | asset_url }}"><link rel="stylesheet" href="{{ 'section-main-search.css' | asset_url }}"><link rel="stylesheet" href="{{ 'section-main-page.css' | asset_url }}"><link rel="stylesheet" href="{{ 'section-main-404.css' | asset_url }}"><link rel="stylesheet" href="{{ 'section-main-password.css' | asset_url }}">{{ content_for_header }}</head><body>{% section 'header' %}<main id="main">{{ content_for_layout }}</main>{% section 'footer' %}<script src="{{ 'theme.js' | asset_url }}" defer></script>{{ 'slider.js' | asset_url | script_tag }}</body></html>
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/svg+xml" href="{{ 'favicon.svg' | asset_url }}">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+      {{ page_title }}
+      ?
+      {{ shop.name }}
+    </title>
+    {% if page_description %}<meta name="description" content="{{ page_description | escape }}">{% endif %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400;1,500&family=Jost:wght@300;400;500&family=Marcellus&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="{{ 'base.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'components.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'section-header.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'section-hero.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'section-quote.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'section-featured-collection.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'section-testimonials.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'section-category-mosaic.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'section-product-lists.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'section-newsletter.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'section-service-features.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'section-featured-blog.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'section-instagram.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'section-footer.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'section-main-product.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'section-main-collection.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'section-main-cart.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'section-main-blog.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'section-main-article.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'section-main-search.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'section-main-page.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'section-main-404.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'section-main-password.css' | asset_url }}">
+    {{ content_for_header }}
+  </head>
+  <body>
+    {% section 'header' %}
+    <main id="main">{{ content_for_layout }}</main>
+    {% section 'footer' %}
+    <script src="{{ 'theme.js' | asset_url }}" defer></script>
+    {{ 'slider.js' | asset_url | script_tag }}
+  </body>
+</html>
