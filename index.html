@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beanie – Specialty Coffee</title>
+  <meta name="description" content="Beanie coffee shop – specialty coffee, coffee makers, accessories and gift sets.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400;1,500&family=Jost:wght@300;400;500&family=Marcellus&display=swap" rel="stylesheet">
+
+  <!-- Styles (one file per section, same idea as Shopify sections) -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/section-header.css">
+  <link rel="stylesheet" href="assets/css/section-hero.css">
+  <link rel="stylesheet" href="assets/css/section-quote.css">
+  <link rel="stylesheet" href="assets/css/section-featured-collection.css">
+  <link rel="stylesheet" href="assets/css/section-testimonials.css">
+  <link rel="stylesheet" href="assets/css/section-category-mosaic.css">
+  <link rel="stylesheet" href="assets/css/section-product-lists.css">
+  <link rel="stylesheet" href="assets/css/section-newsletter.css">
+  <link rel="stylesheet" href="assets/css/section-service-features.css">
+  <link rel="stylesheet" href="assets/css/section-featured-blog.css">
+  <link rel="stylesheet" href="assets/css/section-instagram.css">
+  <link rel="stylesheet" href="assets/css/section-footer.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="site-header">
+    <div class="container">
+      <div class="header__inner">
+
+        <input type="checkbox" id="nav-toggle" class="header__toggle-input">
+        <label for="nav-toggle" class="header__burger" aria-label="Toggle menu"><span></span></label>
+
+        <nav class="header__nav" aria-label="Main navigation">
+          <ul class="header__menu">
+            <li><a href="index.html" class="is-active">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#pages">Pages</a></li>
+          </ul>
+        </nav>
+
+        <a href="index.html" class="header__logo" aria-label="Beanie – home">
+          <img src="assets/images/logo.svg" alt="Beanie – best coffee shop since 1987" width="180" height="110">
+        </a>
+
+        <div class="header__actions">
+          <form class="header__search" role="search" action="#" method="get">
+            <input type="search" name="q" placeholder="Search here..." aria-label="Search">
+            <button type="submit" aria-label="Search">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </button>
+          </form>
+          <a href="#" class="header__icon" aria-label="Wishlist">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </a>
+          <a href="#" class="header__icon header__cart" aria-label="Cart">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            <span class="header__cart-count">(01)</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO BANNER ============ -->
+    <section class="hero" aria-label="Hero banner">
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__media">
+            <img src="assets/images/hero-specialty-coffee.svg" alt="Hand holding a specialty coffee bag" width="900" height="1000">
+          </div>
+          <div class="hero__content">
+            <h1 class="hero__title">Special <span>Coffee</span></h1>
+            <p class="hero__text">Morbi justo vel diam non leo elementum massa. Molestie ipsum condimentum egestas vitae ut cras aenean enim. Laoreet odio adipiscing auctor scelerisque phasellus nisl faucibus.</p>
+            <a href="#shop" class="btn btn--outline">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUOTE / RICH TEXT ============ -->
+    <section class="quote" aria-label="Introduction">
+      <div class="container">
+        <p class="quote__text">Morbi justo vel diam non leo elementum massa. Molestie ipsum condimentum egestas vitae ut cras aenean enim. Laoreet odio adipiscing auctor scelerisque phasellus nisl faucibus.</p>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED COLLECTION (SHOP BEST COFFEE) ============ -->
+    <section class="featured" id="shop" aria-labelledby="featured-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" id="featured-title">Shop Best Coffee</h2>
+          <div class="section-head__tools">
+            <a href="#" class="link-small">View all</a>
+            <button type="button" class="arrow-btn" aria-label="Previous">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button type="button" class="arrow-btn arrow-btn--dark" aria-label="Next">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <ul class="featured__track">
+          <li class="product-card">
+            <a href="#" class="product-card__link">
+              <div class="product-card__media"><img src="assets/images/product-1.svg" alt="Caramelicious coffee" width="600" height="667" loading="lazy"></div>
+              <h3 class="product-card__title">Caramelicious</h3>
+              <p class="product-card__price">$29.00</p>
+            </a>
+          </li>
+          <li class="product-card">
+            <a href="#" class="product-card__link">
+              <div class="product-card__media"><img src="assets/images/product-2.svg" alt="Hazelnut Heaven coffee" width="600" height="667" loading="lazy"></div>
+              <h3 class="product-card__title">Hazelnut Heaven</h3>
+              <p class="product-card__price">$29.00</p>
+            </a>
+          </li>
+          <li class="product-card">
+            <a href="#" class="product-card__link">
+              <div class="product-card__media"><img src="assets/images/product-3.svg" alt="Maple Magic coffee machine" width="600" height="667" loading="lazy"></div>
+              <h3 class="product-card__title">Maple Magic</h3>
+              <p class="product-card__price">$29.00</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="testimonials" aria-label="Customer testimonials">
+      <div class="container">
+        <div class="testimonials__inner">
+          <button type="button" class="round-btn" aria-label="Previous testimonial">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <figure class="testimonials__item">
+            <blockquote class="testimonials__quote">“Habitant aliquet sed suspendisse lectus sit gravida sit morbi augue. Porta cursus diam sit velit mi. Maecenas scelerisque tellus nulla ut vitae amet morbi platea blandit vestibulum dignissim.”</blockquote>
+            <figcaption class="testimonials__author">Sarah Anderson</figcaption>
+          </figure>
+          <button type="button" class="round-btn round-btn--dark" aria-label="Next testimonial">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CATEGORY MOSAIC ============ -->
+    <section class="mosaic" aria-label="Shop by category">
+      <div class="container">
+        <div class="mosaic__grid">
+
+          <div class="mosaic__tile mosaic__tile--image"><img src="assets/images/category-1.svg" alt="Filter coffee beans" width="600" height="600" loading="lazy"></div>
+
+          <div class="mosaic__tile mosaic__tile--card">
+            <div class="mosaic__card">
+              <h3 class="mosaic__title">Instant Coffees</h3>
+              <p class="mosaic__text">Euismod eget id posuere nisl ut me duis in lectus elementum tincidunt augue ut neger in tincidunt amet et ultrices.</p>
+              <a href="#" class="link-small link-underline">Shop Category</a>
+            </div>
+          </div>
+
+          <div class="mosaic__tile mosaic__tile--image"><img src="assets/images/category-2.svg" alt="Coffee maker" width="600" height="600" loading="lazy"></div>
+
+          <div class="mosaic__tile mosaic__tile--card">
+            <div class="mosaic__card">
+              <h3 class="mosaic__title">Coffee Makers</h3>
+              <p class="mosaic__text">Euismod eget id posuere nisl ut me duis in lectus elementum tincidunt augue ut neger in tincidunt amet et ultrices.</p>
+              <a href="#" class="link-small link-underline">Shop Category</a>
+            </div>
+          </div>
+
+          <div class="mosaic__tile mosaic__tile--card">
+            <div class="mosaic__card">
+              <h3 class="mosaic__title">Coffee Accessories</h3>
+              <p class="mosaic__text">Euismod eget id posuere nisl ut me duis in lectus elementum tincidunt augue ut neger in tincidunt amet et ultrices.</p>
+              <a href="#" class="link-small link-underline">Shop Category</a>
+            </div>
+          </div>
+
+          <div class="mosaic__tile mosaic__tile--image"><img src="assets/images/category-3.svg" alt="Coffee jar and spoon" width="600" height="600" loading="lazy"></div>
+
+          <div class="mosaic__tile mosaic__tile--card">
+            <div class="mosaic__card">
+              <h3 class="mosaic__title">Coffee Gift Sets</h3>
+              <p class="mosaic__text">Euismod eget id posuere nisl ut me duis in lectus elementum tincidunt augue ut neger in tincidunt amet et ultrices.</p>
+              <a href="#" class="link-small link-underline">Shop Category</a>
+            </div>
+          </div>
+
+          <div class="mosaic__tile mosaic__tile--image"><img src="assets/images/category-4.svg" alt="Pumpkin spice latte" width="600" height="600" loading="lazy"></div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEW ARRIVALS + BEST SELLING ============ -->
+    <section class="lists" aria-label="New arrivals and best selling">
+      <div class="container">
+        <div class="lists__grid">
+
+          <div class="list-block">
+            <h2 class="section-title">New Arrivals</h2>
+            <ul class="list-block__items">
+              <li class="list-item">
+                <a href="#" class="list-item__link">
+                  <img class="list-item__thumb" src="assets/images/thumb-1.svg" alt="" width="40" height="40" loading="lazy">
+                  <div class="list-item__body">
+                    <div class="list-item__row"><h3 class="list-item__title">Coconut Kiss</h3><span class="list-item__line"></span><span class="list-item__price">$2.99</span></div>
+                    <p class="list-item__desc">A strong and concentrated shot of coffee.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="list-item__link">
+                  <img class="list-item__thumb" src="assets/images/thumb-2.svg" alt="" width="40" height="40" loading="lazy">
+                  <div class="list-item__body">
+                    <div class="list-item__row"><h3 class="list-item__title">Pumpkin Spice Surprise</h3><span class="list-item__line"></span><span class="list-item__price">$3.49</span></div>
+                    <p class="list-item__desc">A shot of espresso diluted with hot water.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="list-item__link">
+                  <img class="list-item__thumb" src="assets/images/thumb-3.svg" alt="" width="40" height="40" loading="lazy">
+                  <div class="list-item__body">
+                    <div class="list-item__row"><h3 class="list-item__title">Toffee Temptation</h3><span class="list-item__line"></span><span class="list-item__price">$3.99</span></div>
+                    <p class="list-item__desc">Equal parts of espresso, steamed milk, and foam, topped with cocoa.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="list-item__link">
+                  <img class="list-item__thumb" src="assets/images/thumb-4.svg" alt="" width="40" height="40" loading="lazy">
+                  <div class="list-item__body">
+                    <div class="list-item__row"><h3 class="list-item__title">Gingerbread Galore</h3><span class="list-item__line"></span><span class="list-item__price">$4.49</span></div>
+                    <p class="list-item__desc">Creamy espresso with steamed milk and a thin layer of foam.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="list-item__link">
+                  <img class="list-item__thumb" src="assets/images/thumb-5.svg" alt="" width="40" height="40" loading="lazy">
+                  <div class="list-item__body">
+                    <div class="list-item__row"><h3 class="list-item__title">Salted Caramel Sip</h3><span class="list-item__line"></span><span class="list-item__price">$3.99</span></div>
+                    <p class="list-item__desc">A nutty and indulgent latte with a hint of macadamia flavor.</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <a href="#" class="link-small link-underline list-block__more">View all</a>
+          </div>
+
+          <div class="list-block">
+            <h2 class="section-title">Best Selling</h2>
+            <ul class="list-block__items">
+              <li class="list-item">
+                <a href="#" class="list-item__link">
+                  <img class="list-item__thumb" src="assets/images/thumb-6.svg" alt="" width="40" height="40" loading="lazy">
+                  <div class="list-item__body">
+                    <div class="list-item__row"><h3 class="list-item__title">Cinnamon Swirl</h3><span class="list-item__line"></span><span class="list-item__price">$2.99</span></div>
+                    <p class="list-item__desc">A strong and concentrated shot of coffee.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="list-item__link">
+                  <img class="list-item__thumb" src="assets/images/thumb-7.svg" alt="" width="40" height="40" loading="lazy">
+                  <div class="list-item__body">
+                    <div class="list-item__row"><h3 class="list-item__title">Hazelnut Heaven</h3><span class="list-item__line"></span><span class="list-item__price">$3.49</span></div>
+                    <p class="list-item__desc">A shot of espresso diluted with hot water.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="list-item__link">
+                  <img class="list-item__thumb" src="assets/images/thumb-8.svg" alt="" width="40" height="40" loading="lazy">
+                  <div class="list-item__body">
+                    <div class="list-item__row"><h3 class="list-item__title">Peppermint Perk</h3><span class="list-item__line"></span><span class="list-item__price">$3.99</span></div>
+                    <p class="list-item__desc">Equal parts of espresso, steamed milk, and foam, topped with cocoa.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="list-item__link">
+                  <img class="list-item__thumb" src="assets/images/thumb-9.svg" alt="" width="40" height="40" loading="lazy">
+                  <div class="list-item__body">
+                    <div class="list-item__row"><h3 class="list-item__title">Berry Blast</h3><span class="list-item__line"></span><span class="list-item__price">$4.49</span></div>
+                    <p class="list-item__desc">Creamy espresso with steamed milk and a thin layer of foam.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="list-item__link">
+                  <img class="list-item__thumb" src="assets/images/thumb-10.svg" alt="" width="40" height="40" loading="lazy">
+                  <div class="list-item__body">
+                    <div class="list-item__row"><h3 class="list-item__title">Macadamia Nut Latte</h3><span class="list-item__line"></span><span class="list-item__price">$3.99</span></div>
+                    <p class="list-item__desc">A nutty and indulgent latte with a hint of macadamia flavor.</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <a href="#" class="link-small link-underline list-block__more">View all</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEWSLETTER ============ -->
+    <section class="newsletter" aria-labelledby="newsletter-title">
+      <div class="container">
+        <div class="newsletter__inner">
+          <h2 class="section-title" id="newsletter-title">Subscribe Us</h2>
+          <p class="newsletter__text">Subscribe to our newsletter for discount codes and updates.</p>
+          <form class="newsletter__form" action="#" method="post">
+            <label for="newsletter-email" class="visually-hidden">Email address</label>
+            <input type="email" id="newsletter-email" name="email" placeholder="Write your email address here..." required>
+            <button type="submit" class="newsletter__btn">Subscribe</button>
+          </form>
+          <ul class="social">
+            <li><a href="#" aria-label="Facebook"><img src="assets/icons/social-facebook.svg" alt="" width="14" height="14"></a></li>
+            <li><a href="#" aria-label="Instagram"><img src="assets/icons/social-instagram.svg" alt="" width="14" height="14"></a></li>
+            <li><a href="#" aria-label="Twitter"><img src="assets/icons/social-twitter.svg" alt="" width="14" height="14"></a></li>
+            <li><a href="#" aria-label="LinkedIn"><img src="assets/icons/social-linkedin.svg" alt="" width="14" height="14"></a></li>
+            <li><a href="#" aria-label="YouTube"><img src="assets/icons/social-youtube.svg" alt="" width="14" height="14"></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICE FEATURES ============ -->
+    <section class="features" aria-label="Our services">
+      <div class="container">
+        <ul class="features__grid">
+          <li class="feature">
+            <img class="feature__icon" src="assets/icons/feature-delivery.svg" alt="" width="28" height="28">
+            <h3 class="feature__title">Quick Delivery</h3>
+            <p class="feature__text">Purus pu vinar feugiat orci d clumst ellentesque ut sem purus nem.</p>
+          </li>
+          <li class="feature">
+            <img class="feature__icon" src="assets/icons/feature-pickup.svg" alt="" width="28" height="28">
+            <h3 class="feature__title">Pickup In Store</h3>
+            <p class="feature__text">Orci d clumst elle ntesque ut sem partu nem purus pu vinar feugiat.</p>
+          </li>
+          <li class="feature">
+            <img class="feature__icon" src="assets/icons/feature-shipping.svg" alt="" width="28" height="28">
+            <h3 class="feature__title">No Shipping Charge</h3>
+            <p class="feature__text">Eugiat orci dictumst ellentesque ut sem purus pulvinar partu nem.</p>
+          </li>
+          <li class="feature">
+            <img class="feature__icon" src="assets/icons/feature-service.svg" alt="" width="28" height="28">
+            <h3 class="feature__title">Friendly Service</h3>
+            <p class="feature__text">Dictumst ellentesque ut sem purus pulvinar feugiat orci partu nem.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED BLOG ============ -->
+    <section class="blogs" id="blog" aria-labelledby="blogs-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title" id="blogs-title">Read Our Blogs</h2>
+          <a href="#" class="link-small">Read blog posts</a>
+        </div>
+
+        <div class="blogs__grid">
+          <article class="article-card article-card--tall-1">
+            <a href="#" class="article-card__link">
+              <div class="article-card__media"><img src="assets/images/blog-1.svg" alt="Cup of coffee with beans" width="600" height="420" loading="lazy"></div>
+              <h3 class="article-card__title">What is the best coffee?</h3>
+              <p class="article-card__text">Ullamcorper ultricies elit viverra congue velit amet. Egestas bibendum lec orci fringilla quam netus sagittis non eu pellentesque facilisis.</p>
+            </a>
+          </article>
+
+          <article class="article-card article-card--tall-2">
+            <a href="#" class="article-card__link">
+              <div class="article-card__media"><img src="assets/images/blog-2.svg" alt="Woman drinking coffee" width="600" height="420" loading="lazy"></div>
+              <h3 class="article-card__title">How coffee works for your body</h3>
+              <p class="article-card__text">Ullamcorper ultricies elit viverra congue velit amet. Egestas bibendum, in ec odio fring la quam netus sagittis non eu pellentesque facilisis.</p>
+            </a>
+          </article>
+
+          <article class="article-card article-card--tall-3">
+            <a href="#" class="article-card__link">
+              <div class="article-card__media"><img src="assets/images/blog-3.svg" alt="Latte art" width="600" height="420" loading="lazy"></div>
+              <h3 class="article-card__title">Cup of coffee for your happiness</h3>
+              <p class="article-card__text">Ullamcorper ultricies elit viverra congue velit amet. Egestas bibendum lec orci fringilla quam netus sagittis non eu pellentesque facilisis.</p>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INSTAGRAM ============ -->
+    <section class="instagram" aria-labelledby="instagram-title">
+      <div class="container">
+        <h2 class="instagram__title" id="instagram-title">Follow our Instagram #Beanie</h2>
+        <ul class="instagram__grid">
+          <li><a href="#"><img src="assets/images/instagram-1.svg" alt="Instagram post 1" width="400" height="400" loading="lazy"></a></li>
+          <li><a href="#"><img src="assets/images/instagram-2.svg" alt="Instagram post 2" width="400" height="400" loading="lazy"></a></li>
+          <li><a href="#"><img src="assets/images/instagram-3.svg" alt="Instagram post 3" width="400" height="400" loading="lazy"></a></li>
+          <li><a href="#"><img src="assets/images/instagram-4.svg" alt="Instagram post 4" width="400" height="400" loading="lazy"></a></li>
+          <li><a href="#"><img src="assets/images/instagram-5.svg" alt="Instagram post 5" width="400" height="400" loading="lazy"></a></li>
+          <li><a href="#"><img src="assets/images/instagram-6.svg" alt="Instagram post 6" width="400" height="400" loading="lazy"></a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="pages">
+    <div class="container">
+      <div class="footer__grid">
+        <ul class="footer__col">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#shop">Shop</a></li>
+        </ul>
+        <ul class="footer__col">
+          <li><a href="#">Shop Single</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="footer__col footer__col--muted">
+          <li><a href="#">Terms &amp; Condition</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <ul class="footer__col footer__col--info">
+          <li>Address, Location, 123</li>
+          <li><a href="mailto:yourinfo@gmail.com">yourinfo@gmail.com</a></li>
+          <li><a href="tel:+111333444555">111 333 444 555</a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Beanie. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

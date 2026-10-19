@@ -1,0 +1,175 @@
+/* =========================================================
+   COMPONENTS — reusable pieces (will become Liquid snippets)
+   ========================================================= */
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 9px 32px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+
+.btn--outline {
+  border: 1px solid var(--color-heading);
+  color: var(--color-heading);
+  background: transparent;
+}
+
+.btn--outline:hover {
+  background: var(--color-heading);
+  color: #fff;
+}
+
+/* Square slider arrows */
+.arrow-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border: 0;
+  border-radius: 4px;
+  background: #e9e3dc;
+  color: var(--color-heading);
+}
+
+.arrow-btn--dark {
+  background: var(--color-dark);
+  color: #fff;
+}
+
+/* Round testimonial arrows */
+.round-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--color-muted);
+}
+
+.round-btn--dark {
+  border-color: var(--color-dark);
+  background: var(--color-dark);
+  color: #fff;
+}
+
+/* ---------- Product card (big, used in slider/collection) ---------- */
+.product-card__link { display: block; }
+
+.product-card__media {
+  aspect-ratio: 9 / 10;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #ece6df;
+}
+
+.product-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s ease;
+}
+
+.product-card__link:hover .product-card__media img { transform: scale(1.04); }
+
+.product-card__title {
+  margin-top: 12px;
+  font-size: 16px;
+  letter-spacing: .04em;
+}
+
+.product-card__price {
+  margin-top: 2px;
+  font-size: 15px;
+  color: var(--color-accent);
+}
+
+/* ---------- Product list item (small row) ---------- */
+.list-item__link {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.list-item__thumb {
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.list-item__body { flex: 1; min-width: 0; }
+
+.list-item__row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.list-item__title {
+  font-size: 12px;
+  letter-spacing: .06em;
+  white-space: nowrap;
+}
+
+.list-item__line {
+  flex: 1;
+  height: 1px;
+  background: var(--color-border);
+}
+
+.list-item__price {
+  font-size: 12px;
+  color: var(--color-heading);
+}
+
+.list-item__desc {
+  margin-top: 2px;
+  font-size: 10px;
+  color: var(--color-muted);
+  line-height: 1.5;
+}
+
+.list-item__link:hover .list-item__title { color: var(--color-accent); }
+
+/* ---------- Article card ---------- */
+.article-card__link { display: block; }
+
+.article-card__media {
+  overflow: hidden;
+  border-radius: 6px;
+  background: #ece6df;
+}
+
+.article-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s ease;
+}
+
+.article-card__link:hover .article-card__media img { transform: scale(1.04); }
+
+.article-card__title {
+  margin-top: 12px;
+  font-size: 13px;
+  letter-spacing: .05em;
+}
+
+.article-card__text {
+  margin-top: 4px;
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--color-muted);
+}

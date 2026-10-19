@@ -1,0 +1,43 @@
+/* =========================================================
+   SECTION — TESTIMONIALS
+   ========================================================= */
+
+.testimonials { padding-block: 80px; }
+
+.testimonials__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.testimonials__item {
+  flex: 1;
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonials__quote {
+  margin: 0;
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-size: 22px;
+  line-height: 1.75;
+  color: var(--color-text);
+}
+
+.testimonials__author {
+  margin-top: 14px;
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--color-heading);
+}
+
+@media (max-width: 768px) {
+  .testimonials { padding-block: 50px; }
+  .testimonials__inner { flex-wrap: wrap; justify-content: center; }
+  .testimonials__item { order: -1; flex-basis: 100%; }
+  .testimonials__quote { font-size: 18px; }
+}

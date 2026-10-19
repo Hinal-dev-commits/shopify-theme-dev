@@ -1,0 +1,26 @@
+/* =========================================================
+   SECTION — QUOTE / RICH TEXT
+   ========================================================= */
+
+.quote {
+  padding-block: 110px;
+  background:
+    url("../images/leaf.svg") no-repeat left -30px center / 220px,
+    url("../images/leaf.svg") no-repeat right -30px center / 220px;
+}
+
+.quote__text {
+  max-width: 720px;
+  margin-inline: auto;
+  text-align: center;
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-size: 26px;
+  line-height: 1.75;
+  color: var(--color-text);
+}
+
+@media (max-width: 768px) {
+  .quote { padding-block: 60px; background-size: 120px, 120px; }
+  .quote__text { font-size: 20px; }
+}

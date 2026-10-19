@@ -1,0 +1,43 @@
+/* =========================================================
+   SECTION — SERVICE FEATURES
+   ========================================================= */
+
+.features {
+  border-block: 1px solid var(--color-border);
+  padding-block: 34px;
+}
+
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.feature { text-align: center; }
+
+.feature__icon {
+  margin: 0 auto 10px;
+  opacity: .55;
+}
+
+.feature__title {
+  font-size: 12px;
+  letter-spacing: .08em;
+}
+
+.feature__text {
+  max-width: 190px;
+  margin: 6px auto 0;
+  font-size: 9px;
+  line-height: 1.6;
+  color: var(--color-muted);
+}
+
+@media (max-width: 900px) {
+  .features__grid { grid-template-columns: repeat(2, 1fr); row-gap: 36px; }
+  .feature__text { font-size: 11px; }
+}
+
+@media (max-width: 480px) {
+  .features__grid { grid-template-columns: 1fr; }
+}

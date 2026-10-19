@@ -1,0 +1,41 @@
+/* =========================================================
+   SECTION — INSTAGRAM
+   ========================================================= */
+
+.instagram { padding-block: 40px 70px; }
+
+.instagram__title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: .08em;
+}
+
+.instagram__grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.instagram__grid a {
+  display: block;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.instagram__grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: transform .5s ease;
+}
+
+.instagram__grid a:hover img { transform: scale(1.06); }
+
+@media (max-width: 900px) {
+  .instagram__grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .instagram__grid { grid-template-columns: repeat(2, 1fr); }
+}

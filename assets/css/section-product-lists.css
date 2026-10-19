@@ -1,0 +1,27 @@
+/* =========================================================
+   SECTION — NEW ARRIVALS + BEST SELLING (two columns)
+   ========================================================= */
+
+.lists { padding-block: 80px 60px; }
+
+.lists__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.list-block .section-title { margin-bottom: 22px; }
+
+.list-block__items {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.list-block__more { margin-top: 20px; }
+
+@media (max-width: 768px) {
+  .lists { padding-block: 50px 30px; }
+  .lists__grid { grid-template-columns: 1fr; gap: 44px; }
+  .list-item__title { white-space: normal; }
+}

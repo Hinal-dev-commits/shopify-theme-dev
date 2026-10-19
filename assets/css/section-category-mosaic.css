@@ -1,0 +1,60 @@
+/* =========================================================
+   SECTION — CATEGORY MOSAIC (4 x 2 checkerboard)
+   Image tiles and text-card tiles alternate.
+   ========================================================= */
+
+.mosaic { padding-block: 30px 40px; }
+
+.mosaic__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.mosaic__tile { aspect-ratio: 1 / 0.97; overflow: hidden; }
+
+.mosaic__tile--image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mosaic__tile--card {
+  padding: 8px;
+  background: var(--color-surface);
+}
+
+.mosaic__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 100%;
+  padding: 18px 22px;
+  border: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.mosaic__title {
+  font-size: 12px;
+  letter-spacing: .08em;
+}
+
+.mosaic__text {
+  max-width: 190px;
+  font-size: 9px;
+  line-height: 1.6;
+  color: var(--color-muted);
+}
+
+@media (max-width: 900px) {
+  .mosaic__grid { grid-template-columns: repeat(2, 1fr); }
+  .mosaic__text { font-size: 11px; max-width: 260px; }
+  .mosaic__title { font-size: 14px; }
+}
+
+@media (max-width: 480px) {
+  .mosaic__tile { aspect-ratio: 1 / 1; }
+  .mosaic__text { display: none; }
+}

@@ -1,0 +1,32 @@
+/* =========================================================
+   SECTION — FEATURED BLOG
+   Cards are top-aligned with different image heights (staggered).
+   ========================================================= */
+
+.blogs { padding-block: 90px 60px; }
+
+.blogs__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  align-items: start;
+}
+
+.article-card--tall-1 .article-card__media { aspect-ratio: 1 / 0.62; }
+.article-card--tall-2 .article-card__media { aspect-ratio: 1 / 0.78; }
+.article-card--tall-3 .article-card__media { aspect-ratio: 1 / 0.58; }
+
+.article-card--tall-3 { padding-top: 6px; }
+
+@media (max-width: 900px) {
+  .blogs__grid { grid-template-columns: 1fr 1fr; gap: 24px 12px; }
+  .article-card--tall-1 .article-card__media,
+  .article-card--tall-2 .article-card__media,
+  .article-card--tall-3 .article-card__media { aspect-ratio: 1 / 0.7; }
+  .article-card--tall-3 { padding-top: 0; }
+}
+
+@media (max-width: 540px) {
+  .blogs { padding-block: 56px 40px; }
+  .blogs__grid { grid-template-columns: 1fr; }
+}

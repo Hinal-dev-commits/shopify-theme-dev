@@ -1,0 +1,29 @@
+/* =========================================================
+   SECTION — FEATURED COLLECTION (Shop Best Coffee)
+   No JS: the track is a native scroll-snap row.
+   ========================================================= */
+
+.featured { padding-bottom: 20px; }
+
+.featured__track {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.featured__track::-webkit-scrollbar { display: none; }
+
+.featured__track .product-card {
+  flex: 0 0 calc((100% - 16px) / 3);
+  scroll-snap-align: start;
+}
+
+@media (max-width: 900px) {
+  .featured__track .product-card { flex-basis: calc((100% - 8px) / 2); }
+}
+
+@media (max-width: 540px) {
+  .featured__track .product-card { flex-basis: 80%; }
+}

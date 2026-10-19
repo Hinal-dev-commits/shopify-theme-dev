@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="667" viewBox="0 0 600 667">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d9c3a1"/><stop offset="1" stop-color="#a98b64"/></linearGradient></defs>
+<rect width="100%" height="100%" fill="url(#g)"/>
+<ellipse cx="300.0" cy="323.5" rx="99.0" ry="132.0" fill="#ffffff" fill-opacity="0.18" transform="rotate(-25 300.0 333.5)"/>
+<path d="M227.39999999999998 412.7 Q300.0 307.1 372.6 214.7" stroke="#ffffff" stroke-opacity="0.35" stroke-width="9.24" fill="none"/>
+<text x="300.0" y="620.31" text-anchor="middle" font-family="Arial, sans-serif" font-size="27.0" fill="#ffffff" fill-opacity="0.8" letter-spacing="2">HAZELNUT HEAVEN</text>
+</svg>
